@@ -10,18 +10,13 @@ To break the chain of transmission through enforcing COVID-19 physical distancin
 
 ## Algorithm (Pseudo-code)
 
-*  Initialize M5 Stack devices.
-*  Connect the two devices to WiFi in both AP and station
-mode.
-*  Begin 2 Access Points on the M5 Stack and give the name
-     “BoardA” to one and “BoardB” to the other.
-*  Get the number of nearby WiFi networks.
- While networks are found, compare their
-*  If SSID found equals “BoardB”, get its
-*  If RSSI value > -47, emit vibration and
-  “Please maintain a safe distance.”.
-*  Else, set the screen to green and print
-SSIDs.
-RSSI value.
-print message
-message “Safe :)”.
+*  Initialize M5 Stack devices
+*  Connect the two devices to WiFi in both AP and station mode
+*  Begin 2 Access Points on the M5 Stack and give the name “BoardA” to one and “BoardB” to the other
+*  Get the number of nearby WiFi networks
+*  While networks are found, compare their SSIDs
+*  If SSID found equals “BoardB”, get its R4SSI value
+*  If RSSI value > -47, emit vibration and print message “Please maintain a safe distance.”
+*  Else, set the screen to green and print message “Safe”
+
+
